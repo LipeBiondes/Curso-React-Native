@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Básico</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <form method="POST" onsubmit="return false">
+      <input type="text" name="nome" onfocus="focado()" onblur="desfocado()" />
+      <br />
+
+      <select name="cidades" onchange="opcaoSelecionada(this)">
+        <option value="">São Paulo</option>
+        <option value="">Rio de Janeiro</option>
+        <option value="">Rio Preto</option>
+        <option value="">Curitiba</option>
+        <option value="">Redenção</option>
+      </select>
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

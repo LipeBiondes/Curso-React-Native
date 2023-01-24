@@ -1,0 +1,3 @@
+function carregou() {
+  alert('Carregou!')
+}

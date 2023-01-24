@@ -1,0 +1,24 @@
+<p>​</p>
+<h4><strong data-redactor-tag="strong">useState do Hooks</strong></h4>
+<p>Vamos ao exemplo:</p>
+<pre>import React, { useState } from 'react';
+
+function App() {
+
+  // Declarar uma nova variável de state, na qual chamaremos de "contador"
+  const [contador, setContador] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {contador} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setContador(contador + 1)}&gt;
+          Aumentar
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}</pre>
+<p>Vamos destrinchar isso aqui:</p>
+<pre> const [contador, setContador] = useState(0);</pre>
+<p>- Criamos um estado chamado de <strong data-redactor-tag="strong">contador </strong>e onde o valor <strong data-redactor-tag="strong">padrão ele começa com 0</strong></p>
+<p>- Quando queremos alterar o valor do state contador nós usamos o <strong data-redactor-tag="strong">setContador()</strong></p>
+<p>- Como no exemplo acima quando você clicar no botão ele vai mudar o valor do contador para o valor que ele tem +&nbsp;1<strong data-redactor-tag="strong"> (ou seja se o valor começa em 0 vai ser 0 +&nbsp;1 e quando o valor tiver em 1 vai ser 1 +&nbsp;1 e por ai em diante).</strong></p>
